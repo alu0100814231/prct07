@@ -1,0 +1,11 @@
+#!/usr/bin/python
+#!encoding: UTF-8
+
+import modulo
+import sys
+ 
+valores=(10,100,1000,10000,100000,1000000,10000000) #El numero maximo de elemetos es 7. A partir del octavo elemento se producen errores. Si 
+#valores=(1e1,1e2,1e3,1e4,1e5,1e6,1e7) # Con notación cientica no funciona porque es un tipo flotante
+for n in valores:
+   a=modulo.aprox(n)
+ print a
